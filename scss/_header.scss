@@ -1,0 +1,198 @@
+#topbar {
+    width: 100%;
+    font-size: 12px;
+    position: fixed;
+    top: 0px;
+    display: none;
+    @include fromin(961px) {
+        display: block;
+        background: #00000059;
+    }
+}
+#contact_bar {
+    display: flex;
+    background: #00000059;
+    height: 50px;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.07em;
+    & > div {
+        border-right: 1px dotted #ddd;
+        display: block;
+        height: 50px;
+        padding-right: 1.3em;
+        &:last-child {
+            border-right: none !important;
+        }
+    }
+    & a, & {
+        font-family: 'Open Sans', sans-serif;
+        color: #fff;
+        font-weight: 600;
+    }
+    & a {
+        text-decoration: none;
+    }
+
+    & .cb-chat, .cb-whats, .cb-call {
+        display: flex;
+        align-items: center;
+        text-align: center;
+    }
+
+    & .cb-chat_ico, .cb-whats_b, .cb-whats_ico, .cb-call_ico, .cb-award_ico {
+        background: url(../images/sprt-images.png);
+        height: 45px;
+        width: 40px;
+        display: block;
+    }
+    & .span {
+        font-size: 11px;
+        color: #ffd663 !important;
+    }
+
+    & .cb-chat {
+        color: #fff;
+        a {
+            display: flex;
+            align-items: center;
+        }
+        &_b {
+            position: relative;
+        }
+        &_ico {
+            animation: rotarwpp .9s linear infinite alternate;          
+        }
+        & span {            
+            width: 90px;
+        }
+    }
+    & .cb-whats {
+        & a {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 50px;
+
+            .cb-whats_b {
+                background-position: 250px 0;
+                height: 45px;
+                margin-right: .7em;
+                .cb-whats_ico {
+                    background-position: 207px 0;
+                    animation: rotarwpp .5s linear infinite alternate;
+                    height: 45px;
+                }
+            }
+            .cb-whats_nros {
+                span {
+                    display: block;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+    & .cb-mail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        span {
+            display: block;
+        }
+        
+        & .p {
+            line-height: 14px;
+        }
+    }
+    & .cb-call {
+        a {
+            display: flex;
+            align-items: center;
+        }
+        & .cb-call_ico {
+            background-position: 160px 0;
+            height: 45px;
+            width: 30px;
+        }
+        span {
+            width: 75px;
+        }
+    }
+    & .cb-socials {
+        text-align: center;
+        ul {
+            display: flex;
+            li {
+                list-style: none;
+                a {
+                    display: block;
+                    padding: 0 .4em;
+                }
+            }
+        }
+    }
+    & .cb-award {
+        text-align: center;
+        a {
+            display: block;
+            width: 22px;
+            margin: 0 auto;
+        }
+        &_ico {
+            background-position: 114px -7px;
+            height: 30px;
+            width: 22px;
+        }
+    }
+    & #cb-langs {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        & .ban_en, .ban_es, .ban_br {
+            background: url(../images/sprt-images.png);
+            width: 40px;
+            display: block;
+        }
+        & .ban_en {
+            background-position: 40px 0;
+            height: 22px;
+        }
+        & .ban_br {
+            background-position: 82px -23px;
+            height: 22px;
+        }
+        & .ban_es {
+            background-position: 82px 0;
+            height: 42px;
+        }
+        a {
+            display: flex;
+            align-items: center;
+        }
+    }
+    
+}
+/* icons */
+.fab, .twi, .ins, .you {
+    background: url(../images/sprt-images.png);
+    display: block;
+    width: 15px;
+    height: 25px;
+}
+.fab{
+    background-position: 290px 47px;
+    width: 15px;
+}
+.twi{
+    background-position: 274px 47px;
+    width: 25px;
+}
+.ins{
+    background-position: 292px 25px;
+    width: 20px;
+}
+.you{
+    background-position: 273px 25px;
+    width: 25px;
+}

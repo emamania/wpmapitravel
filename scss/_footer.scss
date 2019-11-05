@@ -1,0 +1,193 @@
+.own {
+    background: #fff;
+}
+.certified {
+    //margin: 2.5em 0;
+    .cert {
+        text-align: center;
+        a, .a {
+            background: url(../images/certificados.png);
+            width: 132px;
+            height: 100px;
+            display: block;
+        }
+        &:nth-child(2) a{
+            background-position: 875px 0;
+        }
+        &:nth-child(3) a{
+            background-position: 730px 0;
+        }
+        &:nth-child(4) a{
+            background-position: 580px 0;
+        }
+        &:nth-child(5) a{
+            background-position: 435px 0;
+        }
+        
+        &:nth-child(1) .a{
+            background-position: 280px 0;
+        }
+        &:nth-child(2) .a{
+            background-position: 130px 2px;
+        }
+        p {
+            color: var(--second-color);
+            font-weight: 700;
+            display: none;
+        }
+    }
+}
+.autor {
+    text-align: center;
+    h4 {
+        margin: 10px 0px 20px 0px;
+        color: #000;
+        text-align: center;
+        font-size: 18px;
+    }
+}
+footer {
+    font-family: 'Open Sans', sans-serif;
+    background: var(--first-color);
+    .footer {
+        background: var(--first-color);
+        .emagrid {
+            --gap: 2em;
+            grid-gap: --gap;
+        }
+        & .destinos, & .info, & .our {
+            padding: 2em 0;
+            h3 {
+                color: #f3f3cd;
+                border-bottom: .1em solid #86ab42;
+                font-size: 1.7em;
+                padding-bottom: .3em;
+                margin-bottom: .5em;
+            }
+            a {
+                font-size: .97em;
+                text-decoration: none;
+            }
+        }
+        & .info p {
+            margin-bottom: .2em;
+            //font-size: 1.19em;
+            strong {
+                color: #212529;
+                font-weight: 700;
+                padding-right: .5em;
+            }
+        }
+        & .info p a, & .info span {
+            color: #fff;
+            font-weight: 400;
+        }
+        
+        & .destinos {
+            .arti {
+                display: flex;
+                justify-content: space-between;
+                & .omega, & .alpha {
+                    ul {
+                        padding-left: 0.7em;
+                        li {
+                            a {
+                                //font-size: 1.19em;
+                                color: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        & .our {
+            ul {
+                li {
+                    margin-left: 1.5em;
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    
+    .footbar {
+        text-align: center;
+        background: #566f28d1;
+        .copyright {
+            padding: .5em 0;
+            display: block;
+            justify-content: space-between;
+            align-items: center;
+            .rs {
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    li {
+                        margin-right: 1.2em;
+                        &:first-child {
+                            background: none;
+                            color: #fff;
+                            font-size: 1.17em;
+                            padding-right: 1em;
+                        }
+                        &:nth-child(2) a {
+                            background: #29487d;
+                        }
+                        &:nth-child(3) a {
+                            background: #1da1f2;
+                        }
+                        &:nth-child(4) a {
+                            background: #C13584;
+                        }
+                        &:nth-child(5) a {
+                            background: #FD1D1D;
+                        }
+                        &:nth-child(2) a, &:nth-child(3) a, &:nth-child(4) a, &:nth-child(5) a {                            
+                            &:hover {
+                                background: #ddd;
+                            }
+                        }
+                        a {
+                            border-radius: 5px;
+                            width: 27px;
+                            height: 27px;
+                            color: #fff;
+                            display: block;
+                        }
+                        .fab {
+                            background-position: 296px 47px;
+                            width: 23px;
+                        }
+                        .twi {
+                            background-position: 276px 47px;
+                        }
+                        .ins {
+                            background-position: 296px 25px;
+                            width: 25px;
+                        }
+                        .you {
+                            background-position: 274px 25px;
+                        }
+                    }
+                }
+            }
+            p {
+                font-size: 1.1em;
+                color: #fff;
+            }
+            
+            @include fromin(sm){
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+}
