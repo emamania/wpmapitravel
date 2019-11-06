@@ -33,8 +33,7 @@
                         <?php                        
                         require_once( ABSPATH . WPINC . '/feed.php' );
                         $feed_url = 'http://feeds.feedburner.com/machupicchu-noticias';
-                        $rss = fetch_feed($feed_url);
-                        
+                        $rss = fetch_feed($feed_url);                        
                         if (!is_wp_error($rss)) {
                             $max_items = $rss->get_item_quantity(6); //pass the quantity(number of post to fetch)
                             $rss_items = $rss->get_items( 0, $max_items );

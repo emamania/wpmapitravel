@@ -15,7 +15,9 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    background: var(--third-color);
+    @include fromin(400px){
+        background: var(--third-color);
+    }
 }
 img {
     max-width: 100%;
