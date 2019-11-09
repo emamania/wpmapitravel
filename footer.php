@@ -39,13 +39,10 @@
                 </div>
                 <div class="md-cols-3">
                     <div class="our">
-                        <h3>Nosotros</h3>
-                        <ul>
-                            <li><a href="http://www.entradasamachupicchu.com">Nuestras Autorizaciones</a></li>
-                            <li><a href="http://news.machupicchu.com.pe">Asociacion y miembros</a></li>
-                            <li><a href="http://testimonios.machupicchu.com.pe">Referencias a Machupicchu</a></li>
-                            <li><a href="http://www.machupicchutravelagency.com/">Tours to Machu Picchu</a></li>
-                        </ul>
+                        <h3>Premio a la Calidad</h3>
+                        <div class="embed-responsive embed-16by9">
+                            <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/jx9WmW8iVV4"></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -80,6 +77,19 @@
                     </div>
                     <p>Copyright 2019 © MACHUPICCHU BIZ</p>
                 </div>
+            </div>
+        </div>
+        <div class="footinfo">
+            <div class="messenger">
+                <a href="#">
+                                
+                </a>
+            </div>
+            <div class="whatsapp">
+                <a href="https://api.whatsapp.com/send?phone=51984630919&text=Hola Machupicchu Travel. Me gustaría información sobre.">
+                    <div class="cb-whats_b"><div class="cb-whats_ico"></div></div>
+                    <p>Consulta aquí sobre tu Viaje</p>                              
+                </a>
             </div>
         </div>
     </footer>

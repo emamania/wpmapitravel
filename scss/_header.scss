@@ -4,6 +4,7 @@
     position: fixed;
     top: 0px;
     display: none;
+    z-index: var(--z-fixed);
     @include fromin(961px) {
         display: block;
         background: #00000059;

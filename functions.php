@@ -169,3 +169,10 @@ remove_action('wp_head', 'wp_resource_hints', 2); //https://maswordpress.info/qu
       return "$url' defer ";
   }
 add_filter( 'clean_url', 'defer_parsing_of_js', 11, 1 ); */
+
+	
+function ema_add_lazy_loading($content) {
+    $content = str_replace('<img','<img loading="lazy"', $content);
+    return $content;
+}
+add_filter('the_content', 'ema_add_lazy_loading');

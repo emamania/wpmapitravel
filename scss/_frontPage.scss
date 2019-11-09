@@ -1,7 +1,7 @@
 .front {
     background: #fff;
     padding: 0;
-    @include fromin(400px){
+    @include fromin(sm){
         padding: 0 1.5em;
     }
 }
@@ -53,6 +53,65 @@
     .testimonio {}
 }
 /* SECTIONS HOME RIGHT */
+.homeright_nws {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1em;
+    @include fromin(md){
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1.5em;  
+    }
+    .data {
+        background: #f3f3f3;
+        border-radius: 5px;
+        box-shadow: 1px 1px 1px #ddd;
+        h3 {
+            padding: .4em 1em .7em;
+            text-align: justify;
+            font-size: .9em;
+            height: 100px;
+            max-height: 110px;
+            a {
+                text-decoration: none;
+                color: #5d5d5d;
+                &:hover {
+                    color: var(--first-color);
+                }
+            }
+        }
+        .field-type-image {
+            img {
+                width: 100%;
+                height: 130px;
+                border-top-left-radius: 5px;
+                border-top-right-radius: 5px;
+                display: block;
+            }                    
+        }
+        .field-name-body, .field-name-field-tags {
+            display: none;
+        }
+        .new_btn {
+            padding: 1em;
+            a {
+                text-decoration: none;
+                background: #a35a20;
+                border-radius: 3px;
+                color: #fff;
+                padding: .5em 1.2em;
+                display: block;
+                text-align: center;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-weight: 600;
+                &:hover {
+                    text-decoration: none;
+                    background: #749536;
+                }
+            }
+        }
+    }
+}
 .homeright_rs {
     & > div {
         display: grid;
@@ -123,34 +182,34 @@
     }
 }
 /* SECTIONS HOME LEFT */
-.main_sidebar {
-    .embed-16by9 {
-        &::before {
-            padding-top: 56.25%;
-        }
+.embed-16by9 {
+    &::before {
+        padding-top: 56.25%;
     }
-    .embed-responsive {
-        position: relative;
+}
+.embed-responsive {
+    position: relative;
+    display: block;
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+    margin-bottom: .3em;
+    &::before {
         display: block;
-        width: 100%;
-        padding: 0;
-        overflow: hidden;
-        margin-bottom: .3em;
-        &::before {
-            display: block;
-            content: "";
-        }
-
-        & .embed-responsive-item, & embed, & iframe, & object, & video {
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
+        content: "";
     }
+
+    & .embed-responsive-item, & embed, & iframe, & object, & video {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
+.main_sidebar {
     
     .chtst {
         .data {
@@ -168,7 +227,7 @@
                     position: absolute;
                     bottom: -10px;
                     left: 15px;
-                    border-color: #f6f6f6 transparent;
+                    border-color: #ececec transparent;
                     border-style: solid;
                     border-width: 10px 10px 0;
                     display: block;
@@ -179,6 +238,7 @@
                 margin-top: .5em;
                 display: flex;
                 & .field-name-body {
+                    margin-right: 1rem;
                     & iframe {
                         width: 40px;
                         height: 40px;
@@ -206,6 +266,45 @@
             }
         }
     }
+    .ads {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15px;
+        a {
+            position: relative;
+            color: #fff;            
+            & > p {
+                position: absolute;
+                font-weight: 700;
+                font-size: 2.5rem;
+                top: 1em;
+                width: 80%;
+                text-align: center;
+            }
+            &:first-child{
+                justify-content: center;
+                display: flex;
+                img {
+                    display: block;
+                    border-radius: 3px;
+                }
+            }
+            &:last-child {
+                background: var(--first-color);
+                text-decoration: none;
+                padding: .3em 3em;
+                border-radius: 24px;
+                position: absolute;
+                bottom: 1.5em;
+                font-weight: 700;
+                text-transform: uppercase;
+                &:hover {
+                    background: var(--second-color);
+                }
+            }
+        }
+    }
     .mapi-more {
         text-align: center;
         background: #749536;
@@ -225,6 +324,15 @@
 .homeleft {
     & > div {
     }
-
-    
+    #CDSWIDSSP {
+        text-align: center!important;
+        width: 100%!important;
+        & dt {
+            width: 100%!important;
+        }
+        & .widSSPAll {
+            display: flex;
+            justify-content: center;
+        }
+    }    
 }

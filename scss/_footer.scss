@@ -190,4 +190,49 @@ footer {
             }
         }
     }
+
+    .footinfo {
+        z-index: var(--z-fixed);
+        position: fixed;
+        bottom: .5rem;
+        .messenger {
+            background: #0084ff;
+        }
+        .whatsapp {
+            background: #2bad22;
+            border-radius: 30px;
+            position: relative;
+            padding: .3em 2em;
+            margin: 0 .5em;
+            & a {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                & .cb-whats_b, & .cb-whats_ico {
+                    background: url(../images/sprt-images.png);
+                    height: 45px;
+                    width: 40px;
+                    display: block;
+                }
+                & .cb-whats_b {
+                    background-position: 250px 0;
+                    height: 45px;
+                    margin-right: .7em;
+                    .cb-whats_ico {
+                        background-position: 207px 0;
+                        animation: rotarwpp .5s linear infinite alternate;
+                        height: 45px;
+                    }
+                }
+                p {
+                    color: #fff;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                }
+            }
+        }
+        @include fromin(sm){
+            display: none;
+        }
+    }
 }

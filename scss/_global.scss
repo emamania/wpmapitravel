@@ -15,7 +15,7 @@ body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
-    @include fromin(400px){
+    @include fromin(sm){
         background: var(--third-color);
     }
 }
@@ -48,11 +48,11 @@ hr {
 .s-py-1{
     padding-top: 1rem;
     padding-bottom: 1rem;
-    @include fromin (lg) {
-        .lg-py-2 {
-            padding-top: 2rem;
-            padding-bottom: 2rem;
-        }
+}
+@include fromin(lg) {
+    .lg-py-2 {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
     }
 }
 .s-px-1 {
@@ -86,7 +86,7 @@ hr {
     width: calc(100% - 2rem);
     margin-left: 1rem;
     margin-right: 1rem;
-    max-width: 1024px;
+    max-width: 1124px;
     & &, &.full {
        width: 100%;
        max-width: 100%;
