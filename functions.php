@@ -29,14 +29,15 @@ function website_widgets(){
         'after_title' => '</h4>'
     ));
 
-    /* register_sidebar(array(
-        'name' => 'Seccion Facebook',
-        'id' => 'facebook',
-        'before_widget' => '<div class="widget">',
+    register_sidebar(array(
+        'name' => 'Descripción de WebSite',
+        'id' => 'destour',
+        'before_widget' => '<div class="howsite">',
         'after_widget' => '</div>',
         'before_title' => '<h2>',
         'after_title' => '</h2>'
     ));
+    /* 
     register_sidebar(array(
         'name' => 'Seccion Noticias',
         'id' => 'news',

@@ -20,6 +20,9 @@ get_header(); ?>
         </div>
         <div class="front emagrid md-grid-9">
             <div class="md-cols-6 main_cont">
+                <?php if (is_active_sidebar('destour')) :?>	
+                    <?php dynamic_sidebar('destour') ?>
+                <?php endif; ?>
                 <?php while(have_posts()) : the_post(); ?>
                     <?php the_content(); ?>
                 <?php endwhile; wp_reset_postdata(); ?>                                
