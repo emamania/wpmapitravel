@@ -1,0 +1,14 @@
+#header {
+    #nav {
+        display: flex;
+        .logo {}
+        .menu {
+            position: relative;
+            ul {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-end;
+            }
+        }        
+    }
+}

@@ -1,0 +1,46 @@
+:root {
+    --first-color        : #749536;
+    --first-color_alt    : #566f28;
+    --second-color       : #a35a20;
+    --second-color_alt   : #7e4211;
+    --third-color        : #f3f3cd;
+    --third-color_alt    : #d4d4b3;
+}
+:root {
+    --z-back: -10;
+    --z-normal: 1;
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+}
+/* MIxing */
+$breakpoints: (
+    sm      : 480px,
+    md      : 768px,
+    lg      : 1024px,
+    xl      : 1224px
+);
+@mixin fromin($bp) {
+   @if map-has-key($breakpoints, $bp ){
+       @media screen and (min-width : map_get($breakpoints,$bp)) {
+           @content;
+       }
+   } @else {
+       @media screen and (min-width : $bp) {
+           @content;
+       }
+   }
+}
+@keyframes rotarwpp{
+	from{
+		transform: scale(1);
+	}
+	to{
+		transform: scale(1.2);
+	}
+}
