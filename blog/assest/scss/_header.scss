@@ -1,13 +1,36 @@
 #header {
+    background: var(--primary);
+    max-height: 50px;
     #nav {
-        display: flex;
-        .logo {}
+        justify-content: center;
+        align-items: center;
+        .logo>a, .menu>ul {
+            height: 50px;
+            display: block;
+        }
+        .logo {            
+            a {
+                padding: 10px;
+                color: #fff;
+                font-size: 20px;
+                font-weight: bold;
+                .icon-logo:before {
+                    font-size: 30px;
+                }
+            }
+        }
         .menu {
             position: relative;
             ul {
                 display: flex;
                 justify-content: space-between;
-                align-items: flex-end;
+                align-items: center;
+                li {
+                    list-style: none;
+                    a {
+                        color: #fff;
+                    }
+                }
             }
         }        
     }

@@ -1,0 +1,1479 @@
+@import url("//fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic");
+
+@font-face {
+    font-family: "slick";
+    src: url(/fonts/slick.eot);
+    src: url(/fonts/slick.eot?#iefix) format("embedded-opentype"), 
+                                        url(/fonts/slick.woff) format("woff"), 
+                                        url(/fonts/slick.ttf) format("truetype"), 
+                                        url(/fonts/slick.svg#slick) format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important;
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important
+    }
+    a,
+    a:visited {
+        text-decoration: underline
+    }
+    a[href]:after {
+        content: " (" attr(href) ")"
+    }
+    abbr[title]:after {
+        content: " (" attr(title) ")"
+    }
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: ""
+    }
+    pre {
+        border: 1px solid #999;
+        page-break-inside: avoid
+    }
+    thead {
+        display: table-header-group
+    }
+    tr,
+    img {
+        page-break-inside: avoid
+    }
+    img {
+        max-width: 100% !important;
+        display: block;
+    }
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3
+    }
+    h2,
+    h3 {
+        page-break-after: avoid
+    }
+    select {
+        background: #fff !important
+    }
+    .navbar {
+        display: none
+    }
+    .btn>.caret,
+    .dropup>.btn>.caret {
+        border-top-color: #000 !important
+    }
+    .label {
+        border: 1px solid #000
+    }
+    .table {
+        border-collapse: collapse !important
+    }
+    .table td,
+    .table th {
+        background-color: #fff !important
+    }
+    .table-bordered th,
+    .table-bordered td {
+        border: 1px solid #ddd !important
+    }
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box
+}
+html {
+    font-size: 10px;
+    -webkit-tap-highlight-color: transparent
+}
+
+input,
+button,
+select,
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit
+}
+a {
+    color: #158cba;
+    text-decoration: none
+}
+a:hover,
+a:focus {
+    color: #158cba;
+    text-decoration: underline
+}
+a:focus {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px
+}
+
+
+
+
+
+
+
+
+/* =========================================================== */
+html {
+    height: 100%
+}
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    height: 100%;
+    width: 100%;
+    background: #E7EAEA;
+    color: #718696
+}
+
+
+h1,.h1 {
+    font-size: 28px;
+    line-height: 40px;
+    font-weight: bold
+}
+h1 .icon:before,
+.h1 .icon:before {
+    font-size: 38px
+}
+@media (min-width: 768px) {
+    h1,.h1 {
+        font-size: 34px;
+        line-height: 46px
+    }
+}
+h2,.h2 {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: normal
+}
+h2 .icon:before,
+.h2 .icon:before {
+    font-size: 32px
+}
+@media (min-width: 768px) {
+    h2,.h2 {
+        font-size: 30px;
+        line-height: 38px
+    }
+}
+h3,.h3 {
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: normal
+}
+h3 .icon:before,
+.h3 .icon:before {
+    font-size: 26px
+}
+@media (min-width: 768px) {
+    h3,.h3 {
+        font-size: 24px;
+        line-height: 34px
+    }
+}
+h4,.h4 {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: normal
+}
+h4.bold,
+.h4.bold {
+    line-height: 1.4em
+}
+@media (min-width: 768px) {
+    h4,.h4 {
+        font-size: 18px;
+        line-height: 24px
+    }
+}
+h5,.h5 {
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: normal
+}
+@media (min-width: 768px) {
+    h5,.h5 {
+        font-size: 16px;
+        line-height: 20px
+    }
+}
+
+p,span,.text { color: #718696}
+p,span,.text,a {
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 300
+}
+
+p {
+    color: #718696
+}
+p b,
+p strong {
+    font-weight: normal
+}
+p a {
+    font-weight: normal
+}
+a {
+    color: #158cba;
+    font-weight: normal;
+    text-decoration: none
+}
+a span {
+    color: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    font-weight: inherit
+}
+a:focus,
+a:active,
+a:visited {
+    color: #158cba;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
+    text-decoration: none
+}
+a:hover {
+    color: #158cba;
+    text-decoration: underline;
+    outline: none
+}
+
+ul,
+ol {
+    margin: 0;
+}
+ul ul,
+ol ul,
+ul ol,
+ol ol {
+    margin: 0;
+}
+
+
+p.tip {
+    clear: both
+}
+p.tip:before {
+    content: "";
+    float: left;
+    width: 30px;
+    height: 30px;
+    background: url(/images/tips.png) no-repeat;
+    margin-bottom: 10px;
+    margin-right: 10px
+}
+
+
+
+
+small,.small {
+    font-size: 85%
+}
+mark,.mark {
+    background-color: #ff851b;
+    padding: .2em
+}
+.text-left {
+    text-align: left
+}
+.text-right {
+    text-align: right
+}
+.text-center {
+    text-align: center
+}
+.text-justify {
+    text-align: justify
+}
+.text-nowrap {
+    white-space: nowrap
+}
+.text-lowercase {
+    text-transform: lowercase
+}
+.text-uppercase {
+    text-transform: uppercase
+}
+.text-capitalize {
+    text-transform: capitalize
+}
+.text-muted {
+    color: #999999
+}
+.text-primary {
+    color: #158cba
+}
+a.text-primary:hover {
+    color: #106a8c
+}
+.text-success {
+    color: #ffffff
+}
+a.text-success:hover {
+    color: #e6e6e6
+}
+.text-info {
+    color: #ffffff
+}
+a.text-info:hover {
+    color: #e6e6e6
+}
+.text-warning {
+    color: #ffffff
+}
+a.text-warning:hover {
+    color: #e6e6e6
+}
+.text-danger {
+    color: #ffffff
+}
+a.text-danger:hover {
+    color: #e6e6e6
+}
+.bg-primary {
+    color: #fff;
+    background-color: #158cba
+}
+a.bg-primary:hover {
+    background-color: #106a8c
+}
+.bg-success {
+    background-color: #28b62c
+}
+a.bg-success:hover {
+    background-color: #1f8c22
+}
+.bg-info {
+    background-color: #75caeb
+}
+a.bg-info:hover {
+    background-color: #48b9e5
+}
+.bg-warning {
+    background-color: #ff851b
+}
+a.bg-warning:hover {
+    background-color: #e76b00
+}
+.bg-danger {
+    background-color: #ff4136
+}
+a.bg-danger:hover {
+    background-color: #ff1103
+}
+
+
+/*=============================================
+=               ICONOS A UTILIZAR              =
+=============================================*/
+@font-face {
+    font-family: "worldpackers-icons";
+    src: url("/fonts/worldpackers-icons.eot?v=88");
+    src: url("/fonts/worldpackers-icons.eot?v=88#iefix") format("embedded-opentype"), url("/fonts/worldpackers-icons.woff?v=88") format("woff"), url("/fonts/worldpackers-icons.ttf?v=88") format("truetype"), url("/fonts/worldpackers-icons.svg?v=88#worldpackers-icons") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+[data-icon]:before {
+    font-family: "worldpackers-icons" !important;
+    content: attr(data-icon);
+    font-style: normal !important;
+    font-weight: normal;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+    font-family: "worldpackers-icons" !important;
+    font-style: normal !important;
+    font-weight: normal;
+    font-variant: normal !important;
+    text-transform: none !important;
+    speak: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 20px
+}
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px
+}
+.icon.left {
+    margin-right: 0;
+    margin-left: 5px
+}
+.icon.sm {
+    margin-right: 2px
+}
+.icon.sm:before {
+    font-size: 12px
+}
+.icon.sm.left {
+    margin-left: 2px;
+    margin-right: 0
+}
+.icon.md {
+    margin-right: 2px
+}
+.icon.md:before {
+    font-size: 16px
+}
+.icon.md.left {
+    margin-left: 2px;
+    margin-right: 0
+}
+.icon.lg {
+    line-height: 14px
+}
+.icon.lg:before {
+    font-size: 24px
+}
+.icon.center {
+    margin: 0
+}
+.icon.blue {
+    color: #158cba
+}
+.icon.concrete {
+    color: #718696
+}
+.icon.yellow {
+    color: #f6a623
+}
+.icon.white {
+    color: white
+}
+.icon.darkish-red {
+    color: #dc4e59
+}
+.icon.highlight {
+    color: #6fc375
+}
+.icon.error {
+    color: #BF5669
+}
+.icon.orange {
+    color: #F5A623
+}
+.icon.round {
+    border-radius: 50%;
+    background-color: #158cba;
+    padding: 5px 6px 4px;
+    color: white;
+    line-height: 16px
+}
+.icon.round.highlight {
+    color: white;
+    background-color: #6fc375
+}
+.icon.round.error {
+    color: white;
+    background-color: #BF5669
+}
+.icon-block {
+    display: block
+}
+.icon-huge:before {
+    font-size: 40px
+}
+.icon-animal-care:before {
+    content: "\6d"
+}
+.icon-badges:before {
+    content: "\6e"
+}
+.icon-work-exchange:before {
+    content: "\21"
+}
+.icon-write:before {
+    content: "\22"
+}
+.icon-apple:before {
+    content: "\61"
+}
+.icon-archive:before {
+    content: "\62"
+}
+.icon-arrow:before {
+    content: "\63"
+}
+.icon-arrow-down:before {
+    content: "\64"
+}
+.icon-arrow-left:before {
+    content: "\65"
+}
+.icon-article-thin:before {
+    content: "\66"
+}
+.icon-articles:before {
+    content: "\67"
+}
+.icon-artistic:before {
+    content: "\68"
+}
+.icon-arts:before {
+    content: "\69"
+}
+.icon-attach:before {
+    content: "\6a"
+}
+.icon-backpack:before {
+    content: "\6b"
+}
+.icon-badge-expert:before {
+    content: "\6c"
+}
+.icon-badges-full:before {
+    content: "\6f"
+}
+.icon-bag:before {
+    content: "\70"
+}
+.icon-bag-star:before {
+    content: "\71"
+}
+.icon-bag-star-full:before {
+    content: "\72"
+}
+.icon-ballon:before {
+    content: "\73"
+}
+.icon-bar-code:before {
+    content: "\74"
+}
+.icon-bartending:before {
+    content: "\75"
+}
+.icon-beach:before {
+    content: "\76"
+}
+.icon-beach-side:before {
+    content: "\77"
+}
+.icon-bed-full:before {
+    content: "\78"
+}
+.icon-beer-full:before {
+    content: "\79"
+}
+.icon-big-city:before {
+    content: "\7a"
+}
+.icon-bike:before {
+    content: "\41"
+}
+.icon-breakfast:before {
+    content: "\42"
+}
+.icon-business:before {
+    content: "\43"
+}
+.icon-calendar:before {
+    content: "\44"
+}
+.icon-calendar-error:before {
+    content: "\45"
+}
+.icon-calendar-error-plane:before {
+    content: "\46"
+}
+.icon-calendar-new:before {
+    content: "\47"
+}
+.icon-calendar-thin:before {
+    content: "\48"
+}
+.icon-card:before {
+    content: "\49"
+}
+.icon-caret-down:before {
+    content: "\4a"
+}
+.icon-caret-left:before {
+    content: "\4b"
+}
+.icon-caret-right:before {
+    content: "\4c"
+}
+.icon-chat:before {
+    content: "\4d"
+}
+.icon-check:before {
+    content: "\4e"
+}
+.icon-check-full:before {
+    content: "\4f"
+}
+.icon-check-full-no-border:before {
+    content: "\50"
+}
+.icon-check-list:before {
+    content: "\51"
+}
+.icon-check-simple:before {
+    content: "\52"
+}
+.icon-checklist:before {
+    content: "\53"
+}
+.icon-chef-to-the-world:before {
+    content: "\54"
+}
+.icon-chevron-left:before {
+    content: "\55"
+}
+.icon-chevron-right:before {
+    content: "\56"
+}
+.icon-child-care:before {
+    content: "\57"
+}
+.icon-childcare-and-babysitting:before {
+    content: "\58"
+}
+.icon-cleaning:before {
+    content: "\59"
+}
+.icon-clock:before {
+    content: "\5a"
+}
+.icon-closed:before {
+    content: "\30"
+}
+.icon-comment:before {
+    content: "\31"
+}
+.icon-comment-full:before {
+    content: "\32"
+}
+.icon-commitment:before {
+    content: "\33"
+}
+.icon-communication-and-marketing:before {
+    content: "\34"
+}
+.icon-community:before {
+    content: "\35"
+}
+.icon-compose:before {
+    content: "\36"
+}
+.icon-content-writer:before {
+    content: "\37"
+}
+.icon-cooking:before {
+    content: "\38"
+}
+.icon-courses:before {
+    content: "\39"
+}
+.icon-dance-classes:before {
+    content: "\23"
+}
+.icon-dashboard:before {
+    content: "\24"
+}
+.icon-day-off:before {
+    content: "\25"
+}
+.icon-description:before {
+    content: "\26"
+}
+.icon-design:before {
+    content: "\27"
+}
+.icon-dinner:before {
+    content: "\28"
+}
+.icon-discounts:before {
+    content: "\29"
+}
+.icon-discussions:before {
+    content: "\2a"
+}
+.icon-diy-meals:before {
+    content: "\2b"
+}
+.icon-drink-discounts:before {
+    content: "\2c"
+}
+.icon-earth:before {
+    content: "\2d"
+}
+.icon-eco:before {
+    content: "\2e"
+}
+.icon-eco-friendly:before {
+    content: "\2f"
+}
+.icon-eco-project:before {
+    content: "\3a"
+}
+.icon-events:before {
+    content: "\3b"
+}
+.icon-extra-fee:before {
+    content: "\3c"
+}
+.icon-facebook:before {
+    content: "\3d"
+}
+.icon-facebook-messenger:before {
+    content: "\3e"
+}
+.icon-facebook-simple:before {
+    content: "\3f"
+}
+.icon-family:before {
+    content: "\40"
+}
+.icon-farm:before {
+    content: "\5b"
+}
+.icon-farming:before {
+    content: "\5d"
+}
+.icon-file:before {
+    content: "\5e"
+}
+.icon-flag:before {
+    content: "\5f"
+}
+.icon-free-drinks:before {
+    content: "\60"
+}
+.icon-free-events:before {
+    content: "\7b"
+}
+.icon-free-hiking:before {
+    content: "\7c"
+}
+.icon-free-laundry:before {
+    content: "\7d"
+}
+.icon-free-parties:before {
+    content: "\7e"
+}
+.icon-free-pubcrawls:before {
+    content: "\5c"
+}
+.icon-free-tours:before {
+    content: "\e000"
+}
+.icon-gardening:before {
+    content: "\e001"
+}
+.icon-gastronomy:before {
+    content: "\e002"
+}
+.icon-gender:before {
+    content: "\e003"
+}
+.icon-gift:before {
+    content: "\e004"
+}
+.icon-google-play:before {
+    content: "\e005"
+}
+.icon-growth:before {
+    content: "\e006"
+}
+.icon-guide-thin:before {
+    content: "\e007"
+}
+.icon-hands-on:before {
+    content: "\e008"
+}
+.icon-hands-on-chores:before {
+    content: "\e009"
+}
+.icon-handyman:before {
+    content: "\e00a"
+}
+.icon-health-and-fitness:before {
+    content: "\e00b"
+}
+.icon-heart:before {
+    content: "\e00c"
+}
+.icon-heart-full:before {
+    content: "\e00d"
+}
+.icon-help:before {
+    content: "\e00e"
+}
+.icon-hiking:before {
+    content: "\e00f"
+}
+.icon-historical:before {
+    content: "\e010"
+}
+.icon-holistic-therapies:before {
+    content: "\e011"
+}
+.icon-homestay:before {
+    content: "\e012"
+}
+.icon-hospitality:before {
+    content: "\e013"
+}
+.icon-hospitality-entertainment:before {
+    content: "\e014"
+}
+.icon-hospitality-operational:before {
+    content: "\e015"
+}
+.icon-host-potencial:before {
+    content: "\e016"
+}
+.icon-hostel:before {
+    content: "\e017"
+}
+.icon-household-chores:before {
+    content: "\e018"
+}
+.icon-housekeeping:before {
+    content: "\e019"
+}
+.icon-images:before {
+    content: "\e01a"
+}
+.icon-inbox:before {
+    content: "\e01b"
+}
+.icon-inbox-full:before {
+    content: "\e01c"
+}
+.icon-info:before {
+    content: "\e01d"
+}
+.icon-instagram:before {
+    content: "\e01e"
+}
+.icon-kitchen-hand:before {
+    content: "\e01f"
+}
+.icon-lamp:before {
+    content: "\e020"
+}
+.icon-lamp-full:before {
+    content: "\e021"
+}
+.icon-lamp-help:before {
+    content: "\e022"
+}
+.icon-language-classes:before {
+    content: "\e023"
+}
+.icon-language-teaching:before {
+    content: "\e024"
+}
+.icon-last-minute:before {
+    content: "\e025"
+}
+.icon-laundry:before {
+    content: "\e026"
+}
+.icon-link:before {
+    content: "\e027"
+}
+.icon-list-ol:before {
+    content: "\e028"
+}
+.icon-list-ul:before {
+    content: "\e029"
+}
+.icon-listings-discounts:before {
+    content: "\e02a"
+}
+.icon-listings-events:before {
+    content: "\e02b"
+}
+.icon-listings-jobs:before {
+    content: "\e02c"
+}
+.icon-live-thin:before {
+    content: "\e02d"
+}
+.icon-lives:before {
+    content: "\e02e"
+}
+.icon-location-other:before {
+    content: "\e02f"
+}
+.icon-location-profile:before {
+    content: "\e030"
+}
+.icon-lock:before {
+    content: "\e031"
+}
+.icon-locker:before {
+    content: "\e032"
+}
+.icon-login:before {
+    content: "\e033"
+}
+.icon-logo:before {
+    content: "\e034";
+    font-size: 30px
+}
+.icon-logout:before {
+    content: "\e035"
+}
+.icon-lunch:before {
+    content: "\e036"
+}
+.icon-manage-location:before {
+    content: "\e037"
+}
+.icon-manage-location-full:before {
+    content: "\e038"
+}
+.icon-marketing:before {
+    content: "\e039"
+}
+.icon-meals:before {
+    content: "\e03a"
+}
+.icon-messages:before {
+    content: "\e03b"
+}
+.icon-mic-thin:before {
+    content: "\e03c"
+}
+.icon-microphone:before {
+    content: "\e03d"
+}
+.icon-mobile:before {
+    content: "\e03e"
+}
+.icon-money:before {
+    content: "\e03f"
+}
+.icon-money-tag:before {
+    content: "\e040"
+}
+.icon-mountain:before {
+    content: "\e041"
+}
+.icon-nature:before {
+    content: "\e042"
+}
+.icon-nature-lovers:before {
+    content: "\e043"
+}
+.icon-network:before {
+    content: "\e044"
+}
+.icon-new:before {
+    content: "\e045"
+}
+.icon-new-host:before {
+    content: "\e046"
+}
+.icon-ngo:before {
+    content: "\e047"
+}
+.icon-night-shift:before {
+    content: "\e048"
+}
+.icon-no-show:before {
+    content: "\e049"
+}
+.icon-notification-bell:before {
+    content: "\e04a"
+}
+.icon-notification-bell-full:before {
+    content: "\e04b"
+}
+.icon-notifications:before {
+    content: "\e04c"
+}
+.icon-notifications-full:before {
+    content: "\e04d"
+}
+.icon-painting-and-decorating:before {
+    content: "\e04e"
+}
+.icon-party:before {
+    content: "\e04f"
+}
+.icon-party-discounts:before {
+    content: "\e050"
+}
+.icon-party-promoter:before {
+    content: "\e051"
+}
+.icon-passport:before {
+    content: "\e052"
+}
+.icon-paypal:before {
+    content: "\e053"
+}
+.icon-pencil:before {
+    content: "\e054"
+}
+.icon-pencil-full:before {
+    content: "\e055"
+}
+.icon-permaculture:before {
+    content: "\e056"
+}
+.icon-permaculture-course:before {
+    content: "\e057"
+}
+.icon-phone:before {
+    content: "\e058"
+}
+.icon-photo:before {
+    content: "\e059"
+}
+.icon-photo-full:before {
+    content: "\e05a"
+}
+.icon-photography:before {
+    content: "\e05b"
+}
+.icon-photography-and-video:before {
+    content: "\e05c"
+}
+.icon-picture:before {
+    content: "\e05d"
+}
+.icon-picture-o:before {
+    content: "\e05e"
+}
+.icon-pin:before {
+    content: "\e05f"
+}
+.icon-pin-outline:before {
+    content: "\e060"
+}
+.icon-plane:before {
+    content: "\e061"
+}
+.icon-plane-full:before {
+    content: "\e062"
+}
+.icon-plane-full-reverse:before {
+    content: "\e063"
+}
+.icon-play:before {
+    content: "\e064"
+}
+.icon-plus:before {
+    content: "\e065"
+}
+.icon-refresh:before {
+    content: "\e066"
+}
+.icon-response-rate-badge:before {
+    content: "\e067"
+}
+.icon-response-time-badge:before {
+    content: "\e068"
+}
+.icon-restaurant-discounts:before {
+    content: "\e069"
+}
+.icon-skill:before {
+    content: "\e06a"
+}
+.icon-skype:before {
+    content: "\e06b"
+}
+.icon-small-business:before {
+    content: "\e06c"
+}
+.icon-small-village:before {
+    content: "\e06d"
+}
+.icon-star-half:before {
+    content: "\e06e"
+}
+.icon-star-thin:before {
+    content: "\e06f"
+}
+.icon-suburban:before {
+    content: "\e070"
+}
+.icon-support:before {
+    content: "\e071"
+}
+.icon-tent:before {
+    content: "\e072"
+}
+.icon-thanks:before {
+    content: "\e073"
+}
+.icon-thanks-full:before {
+    content: "\e0d6"
+}
+.icon-thin-growth:before {
+    content: "\e074"
+}
+.icon-thunder:before {
+    content: "\e075"
+}
+.icon-unarchive:before {
+    content: "\e076"
+}
+.icon-unexplored:before {
+    content: "\e077"
+}
+.icon-users:before {
+    content: "\e078"
+}
+.icon-vegan:before {
+    content: "\e079"
+}
+.icon-web-developer:before {
+    content: "\e07a"
+}
+.icon-web-development:before {
+    content: "\e07b"
+}
+.icon-whatsapp:before {
+    content: "\e07c"
+}
+.icon-wifi:before {
+    content: "\e07d"
+}
+.icon-yoga:before {
+    content: "\e07e"
+}
+.icon-yoga-classes:before {
+    content: "\e07f"
+}
+.icon-youtube:before {
+    content: "\e080"
+}
+.icon-positions-full:before {
+    content: "\e082"
+}
+.icon-power:before {
+    content: "\e083"
+}
+.icon-private-room:before {
+    content: "\e084"
+}
+.icon-profile:before {
+    content: "\e085"
+}
+.icon-programming-and-tech:before {
+    content: "\e086"
+}
+.icon-pub-discounts:before {
+    content: "\e087"
+}
+.icon-question:before {
+    content: "\e088"
+}
+.icon-reception:before {
+    content: "\e089"
+}
+.icon-search:before {
+    content: "\e08a"
+}
+.icon-search-new:before {
+    content: "\e08b"
+}
+.icon-setting:before {
+    content: "\e08c"
+}
+.icon-share:before {
+    content: "\e08d"
+}
+.icon-shared-dorm:before {
+    content: "\e08e"
+}
+.icon-shopping:before {
+    content: "\e08f"
+}
+.icon-short-trip:before {
+    content: "\e090"
+}
+.icon-site:before {
+    content: "\e091"
+}
+.icon-social-community:before {
+    content: "\e092"
+}
+.icon-social-community-full:before {
+    content: "\e093"
+}
+.icon-social-impact:before {
+    content: "\e094"
+}
+.icon-social-media:before {
+    content: "\e095"
+}
+.icon-social-work:before {
+    content: "\e096"
+}
+.icon-spiritual:before {
+    content: "\e097"
+}
+.icon-star:before {
+    content: "\e098"
+}
+.icon-star-full:before {
+    content: "\e099"
+}
+.icon-surf-classes:before {
+    content: "\e09a"
+}
+.icon-surfboards:before {
+    content: "\e09b"
+}
+.icon-surfing:before {
+    content: "\e09c"
+}
+.icon-tag:before {
+    content: "\e09d"
+}
+.icon-teaching:before {
+    content: "\e09e"
+}
+.icon-teaching-languages:before {
+    content: "\e09f"
+}
+.icon-teaching-sports:before {
+    content: "\e0a0"
+}
+.icon-team-dorm:before {
+    content: "\e0a1"
+}
+.icon-time:before {
+    content: "\e0a2"
+}
+.icon-top-host:before {
+    content: "\e0a3"
+}
+.icon-tour-discounts:before {
+    content: "\e0a4"
+}
+.icon-tour-guide:before {
+    content: "\e0a5"
+}
+.icon-transportation-full:before {
+    content: "\e0a6"
+}
+.icon-trash:before {
+    content: "\e0a7"
+}
+.icon-trash-full:before {
+    content: "\e0a8"
+}
+.icon-twitter:before {
+    content: "\e0a9"
+}
+.icon-video:before {
+    content: "\e0aa"
+}
+.icon-video-full:before {
+    content: "\e0ab"
+}
+.icon-video-making:before {
+    content: "\e0ac"
+}
+.icon-video-thin:before {
+    content: "\e0ad"
+}
+.icon-videos:before {
+    content: "\e0ae"
+}
+.icon-view:before {
+    content: "\e0af"
+}
+.icon-warning:before {
+    content: "\e0b0"
+}
+.icon-waterfall:before {
+    content: "\e0b1"
+}
+.icon-music:before {
+    content: "\e0b2"
+}
+.icon-paid-laundry:before {
+    content: "\e0b3"
+}
+.icon-photo-add-full:before {
+    content: "\e0b4"
+}
+.icon-positions:before {
+    content: "\e0b5"
+}
+.icon-screening:before {
+    content: "\e0b6"
+}
+.icon-snow:before {
+    content: "\e0b7"
+}
+.icon-support-call:before {
+    content: "\e0b8"
+}
+.icon-thunder-full:before {
+    content: "\e0b9"
+}
+.icon-vegetarian:before {
+    content: "\e0ba"
+}
+.icon-wilderness:before {
+    content: "\e0bb"
+}
+.icon-big-house:before {
+    content: "\e0bc"
+}
+.icon-certificate:before {
+    content: "\e0bd"
+}
+.icon-city-lights:before {
+    content: "\e0be"
+}
+.icon-cross:before {
+    content: "\e0bf"
+}
+.icon-eco-activities:before {
+    content: "\e0c0"
+}
+.icon-flag-hover:before {
+    content: "\e0c1"
+}
+.icon-grid-earth:before {
+    content: "\e0c2"
+}
+.icon-gigs:before {
+    content: ""
+}
+.icon-home:before {
+    content: "\e0c3"
+}
+.icon-info-full:before {
+    content: "\e0c4"
+}
+.icon-listing:before {
+    content: "\e0c5"
+}
+.icon-long-journey:before {
+    content: "\e0c6"
+}
+.icon-acceptance-rate-badge:before {
+    content: "\e0c7"
+}
+.icon-accomodation-discounts:before {
+    content: "\e0c8"
+}
+.icon-add:before {
+    content: "\e0c9"
+}
+.icon-add-rounded:before {
+    content: "\e0ca"
+}
+.icon-add-user:before {
+    content: "\e0cb"
+}
+.icon-administration:before {
+    content: "\e0cc"
+}
+.icon-adventure:before {
+    content: "\e0cd"
+}
+.icon-adventure-sports:before {
+    content: "\e0ce"
+}
+.icon-airport-pick-up:before {
+    content: "\e0cf"
+}
+.icon-angle-down:before {
+    content: "\e0d0";
+    font-size: 12px
+}
+.icon-angle-up:before {
+    content: "\e0d1";
+    font-size: 12px
+}
+.icon-animal:before {
+    content: "\e0d2"
+}
+.icon-tag-full:before {
+    content: "\e0d3"
+}
+.icon-courses-full:before {
+    content: "\e0d4"
+}
+.icon-compose-full:before {
+    content: "\e0d5"
+}
+.icon-picture-simple:before {
+    content: "\e0d7"
+}
+.icon-women:before {
+    content: "\e081"
+}
+.icon-partners:before {
+    content: "\e0d8"
+}
+.icon-zoom-in:before {
+    content: "\e0d9"
+}
+
+
+/*=============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=          FIN DE ICONOS A UTILIZAR           =
+=============================================*/

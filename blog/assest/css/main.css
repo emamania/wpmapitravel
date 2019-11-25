@@ -1,11 +1,20 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap");
 :root {
   --first-color: #749536;
   --first-color_alt: #566f28;
   --second-color: #a35a20;
   --second-color_alt: #7e4211;
   --third-color: #f3f3cd;
-  --third-color_alt: #d4d4b3; }
+  --third-color_alt: #d4d4b3;
+  --primary: #158cba;
+  --primary_alt: #106a8c;
+  --sucess: #28b62c;
+  --sucess_alt: #1f8c22;
+  --info: #75caeb;
+  --info_alt: #48b9e5;
+  --warning: #ff851b;
+  --warning: #e76b00;
+  --danger: #ff4136;
+  --danger_alt: #ff1103; }
 
 :root {
   --z-back: -10;
@@ -14,10 +23,11 @@
   --z-fixed: 100;
   --z-modal: 1000; }
 
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 12px; }
-
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+} */
 /* MIxing */
 @-webkit-keyframes rotarwpp {
   from {
@@ -368,19 +378,39 @@ hr {
     margin-left: auto;
     margin-right: auto; } }
 
-#header #nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  #header #nav .menu {
-    position: relative; }
-    #header #nav .menu ul {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-      justify-content: space-between;
-      -webkit-box-align: end;
-      -ms-flex-align: end;
-      align-items: flex-end; }
+#header {
+  background: var(--primary);
+  max-height: 50px; }
+  #header #nav {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    #header #nav .logo > a, #header #nav .menu > ul {
+      height: 50px;
+      display: block; }
+    #header #nav .logo a {
+      padding: 10px;
+      color: #fff;
+      font-size: 20px;
+      font-weight: bold; }
+      #header #nav .logo a .icon-logo:before {
+        font-size: 30px; }
+    #header #nav .menu {
+      position: relative; }
+      #header #nav .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center; }
+        #header #nav .menu ul li {
+          list-style: none; }
+          #header #nav .menu ul li a {
+            color: #fff; }
