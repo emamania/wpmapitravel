@@ -10,8 +10,56 @@
                         <p><strong>Móvil:</strong><a rel="nofollow" href="https://media.perunoticias.net/html/skype.html" class="live-skype" target="_blank">+51-984630919 - +51 984654111</a></p>
                         <p><strong>Oficina Cusco:</strong><span> Jr. José Santos Chocano G-5, Urb. Santa Mónica.</span></p>
                         <p><strong>Oficina Machupicchu:</strong> <span> Calle Imperio de los Incas S/N</span></p>
-                        <p><img style="margin-right:3px;float:left;width: 20px;display: flex;" src="https://www.machupicchu.com.pe/imagenes/whatsapp.png"><strong>WhatsApp:</strong> <a href="#" target="_blank">+51984630919 - +51 984654111 - +51923375399</a></p>
-                        
+                        <p><img alt="Contactanos por Whatsaap" style="margin-right:3px;float:left;width: 20px;display: flex;" src="https://www.machupicchu.com.pe/imagenes/whatsapp.png"><strong>WhatsApp:</strong> <a href="#" target="_blank">+51984630919 - +51 984654111 - +51923375399</a></p>
+                        <?php 
+                            setlocale(LC_TIME, "es_ES");
+                            //	echo 1("%A");
+                                
+                            //	$dias7 = strtotime($hoy."+ 7 days");
+                            //	echo "Tipo de cambio para MT  3.30 del " . strftime(date("d")). " de ". strftime(date("F")). " al " . strftime(date("d", $dias7)). " de " . strftime(date("F", $dias7));
+                            // Mostrar el nombre del Mes en español %B
+                            function MostrarFechas(){
+                                $fLunes;
+                                $fSuma;
+                                $hoy = date("d-m-Y");
+                                switch(date("w")){
+                                    case 1:
+                                        $fLunes = strtotime($hoy."+ 0 days");
+                                        $fSuma = strtotime($hoy."+ 7 days");
+                                        break;
+                                    case 2:
+                                        $fLunes = strtotime($hoy."- 1 days");
+                                        $fSuma = strtotime($hoy."+ 6 days");
+                                        break;
+                                    case 3:
+                                        $fLunes = strtotime($hoy."- 2 days");
+                                        $fSuma = strtotime($hoy."+ 5 days");
+                                        break;
+                                    case 4:
+                                        $fLunes = strtotime($hoy."- 3 days");
+                                        $fSuma = strtotime($hoy."+ 4 days");
+                                        break;
+                                    case 5: 
+                                        $fLunes = strtotime($hoy."- 4 days");
+                                        $fSuma = strtotime($hoy."+ 3 days");
+                                        break;
+                                    case 6:
+                                        $fLunes = strtotime($hoy."- 5 days");
+                                        $fSuma = strtotime($hoy."+ 2 days");
+                                        break;
+                                    case 0:
+                                        $fLunes = strtotime($hoy."- 6 days");
+                                        $fSuma = strtotime($hoy."+ 1 days");
+                                        break;
+                                    default :
+                                        echo "No concuerda con ningun dia de la semana";
+                                        break;
+                                }
+                                return $fechaMostrar = "Tipo de cambio para Machu Picchu Travel S/. 3.40 del ".strftime(date("d",$fLunes))." de ".strftime("%B",$fLunes)." al ".strftime(date("d",$fSuma))." de ". strftime("%B", $fSuma);
+                                }
+                            echo '<p>'. MostrarFechas().'</p>';
+                            
+                        ?>
                     </div>
                 </div>
                 <div class="md-cols-4">
